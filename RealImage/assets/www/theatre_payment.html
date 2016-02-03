@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Real Image</title>
+    <script src="js/jsloader.js" type="text/javascript"></script>
+    <script>
+		app.initialize();
+	</script>
+</head>
+<body class="bodyClsfull" onload="getPaymentDetail()";>
+<div class="main">
+	<div class="col-md-20a" style="background-color:rgba(255, 255, 255, 1)">
+		<div id="apDiv1" >
+        	<img src="images/logo4.png" width="130px"/>
+        </div>
+		<div class="col-md-22a">
+			<div id='cssmenu'>
+				<ul>
+                    <li onclick="getEntryAccess('c');">
+             <a>Content Marketing</a>
+          </li>
+          <li onclick="getEntryAccess('t');">
+             <a>Theatre Marketing</a>
+          </li>
+          <li onclick="navigateToPage('content_report')">
+            <a>Marketing Report</a>
+          </li>
+          <li onclick="navigateToPage('user_report')">
+            <a>Employee Report</a>
+          </li>
+          <li onclick="navigateToPage('payment_collection_report')">
+            <a>Payment Collection Report</a>
+          </li>
+          <li onclick="navigateToPage('change_password');">
+              <a>Change Password</a>
+          </li>
+          <li onclick="navigateToPage('index')">
+            <a>Logout</a>
+          </li>
+                </ul>
+			</div>
+ 		</div>
+	</div>
+    <div class="col-md-23a home_title">
+   		<div align="center" class="title_10 home_text">Theatre Payment Collection Entry</div>
+ 	</div>
+<div class="col-md-26a pad-20px">
+	<div class="col-md-27a register_bg">
+	<div class="col-md-26a">
+        <div class="register_contentDiv">
+            <div class="left">Employee ID</div>
+            <div class="middle">:</div>
+            <div class="right" id="emp_id"></div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+        <div class="register_contentDiv">
+            <div class="left">Employee Name</div>
+            <div class="middle">:</div>
+            <div class="right" id="user_name"></div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+        <div class="register_contentDiv">
+            <div class="left">Employee Mobile</div>
+            <div class="middle">:</div>
+            <div class="right" id="mob_no"></div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">
+            <div class="left">Towards</div>
+            <div class="middle">:</div>
+            <div class="right" id="towards"></div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Towards Description</div>
+            <div class="middle">:</div>
+            <div class="right" id="towards_desc"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">
+            <div class="left">ERP ID</div>
+            <div class="middle">:</div>
+            <div class="right" id="erp_id"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Customer Name</div>
+            <div class="middle">:</div>
+            <div class="right" id="customername"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">
+            <div class="left">Customer Mobile No</div>
+            <div class="middle">:</div>
+            <div class="right" id="customermob"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Amount</div>
+            <div class="middle">:</div>
+            <div class="right" id="amount"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Payment Mode</div>
+            <div class="middle">:</div>
+            <div class="right" id="pay_mode"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Collected By Employee ID</div>
+            <div class="middle">:</div>
+            <div class="right" id="coll_emp_id"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Collected By Employee Name</div>
+            <div class="middle">:</div>
+            <div class="right" id="coll_emp_name"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Collect Mobile Number</div>
+            <div class="middle">:</div>
+            <div class="right" id="coll_mob_no"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+     	<div class="register_contentDiv">
+            <div class="left">Remarks</div>
+            <div class="middle">:</div>
+            <div class="right" id="remarks"> - </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Actual Amount Collected</div>
+       	<input type="text" class="register_textbox margin-top-10px" id="ac_amt" maxlength="10"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Collected Date</div>
+        <div class="register_contentDiv">
+            <div class="right">
+                <input type="text" class="register_textbox margin-top-10px" id="coll_date" disabled/>
+            </div>
+            <div class="middle"></div>
+            <div class="middle" style="width:50px; text-align:right" onClick="showCalendar('coll_date')">
+                <img src="images/calendar.gif" style="width:30px;margin-top:10px; "/>
+            </div>
+        </div>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Collected From</div>
+       	<input type="text" class="register_textbox margin-top-10px" id="collect_from" maxlength="250"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Collected From Mobile No</div>
+       	<input type="text" class="register_textbox margin-top-10px" id="collect_from_mno" maxlength="10"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Payment Mode</div>
+       	<select class="register_textbox margin-top-10px" id="p_pay_mode" onchange="changePayMode();"></select>
+     </div>
+     <div class="col-md-26a margin-top-15px" id="bank">
+		<div class="register_contentDiv">Bank Name</div>
+       	<select class="register_textbox margin-top-10px" id="bank_name"></select>
+     </div>
+     <div class="col-md-26a margin-top-15px" id="cheque">
+        <div class="register_contentDiv">Cheque No / Cheque Date</div>
+        <div class="register_contentDiv margin-top-10px">
+            <div>
+                <input type="text" class="register_textbox " id="cheque_no" maxlength="20"/>
+            </div>
+            <div class="margin-top-10px">
+                /
+            </div>
+             <div class="register_contentDiv margin-top-10px">
+                 <div class="right">
+                    <input type="text" class="register_textbox " id="cheque_date" style="display:inline" maxlength="300"/>   
+                </div>
+                <div class="middle">
+                </div>
+                <div class="left" style="text-align:right; width:50px;">
+                    <img src="images/calendar.gif" style="width:30px;display:inline" onClick="showCalendar('cheque_date')"/>
+                </div>
+            </div>
+        </div>
+     </div>
+      <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Remarks</div>
+       	<textarea class="register_textbox margin-top-10px" id="p_remarks"></textarea>
+     </div>
+     <div class="col-md-26a margin-top-18px" align="center">
+        <input name="Submit2" type="submit" class="input-submit1" value="Save" id="content_entry_save_btn" onclick="saveTheatrePaymentDetail();"/>	
+    </div>
+</div>
+</div>
+</div> 
+ <div class="col-md-26a copy_right_bg">
+ 	<div align="center" class="copy_right_text">Copyright © REAL IMAGE</div>
+ </div>
+</div>
+<div class="loading" id="loading"></div>
+</body>
+</html>

@@ -1,0 +1,420 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+	text-shadow:none;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.ui-content{
+	margin:0px;
+	padding:0px;
+}
+
+.header {
+	background:#454545;
+	height: 50px;
+	width: 100%;
+}
+
+.headerTitle {
+	color: #FFFFFF;
+	text-align:center;
+	padding-top:13px;
+}
+
+.indexPage_bg{
+	background:url(../images/landing_bg.jpg) no-repeat;
+	background-size:100% 100%;
+}
+
+.loginDiv{
+	padding-top:10%;
+}
+
+.login_bg{
+	background:#696969;
+	border-radius:20px;
+	margin:30px;
+}
+
+.loginRow{
+	padding:20px 30px;
+}
+
+.textBoxRow{
+	float:left;
+	width:100%;
+}
+
+.textBox_img{
+	float:left;
+	top:12px;
+	margin-right:-30px;
+	position:relative;
+	z-index:1;
+	left:4px;
+}
+
+.textBoxClass{
+	float:left;
+	width:100%;
+}
+
+.textBoxClass .ui-corner-all {
+   border-radius:12px;
+}
+
+#errorMsg{
+	text-align:center;
+	color:red;
+}
+
+.headerDiv{
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	padding:10px 0px;
+	background:#28B1E8;
+	color:#fff;
+}
+
+.headerDiv .leftColn{
+	display:table-cell;
+	width:30px;
+	vertical-align:middle;
+}
+
+.back_icon{
+	background:url(../images/back_icon.png);
+	background-position:center;
+	width:24px;
+	height:24px;
+	margin-left:3px;
+
+}
+
+.more_icon{
+	background:url(../images/more_icon.png);
+	background-position:center;
+	width:32px;
+	height:32px;
+	margin-left:9px;
+}
+
+.headerDiv .middleColn{
+	display:table-cell;
+	width:auto;
+	vertical-align:middle;
+	font-weight:bold;
+}
+
+.headerDiv .lastColn{
+	display:table-cell;
+	width:50px;
+	text-align:right;
+	vertical-align:mddle;
+}
+
+.leftSlider_title{
+	padding:15px 0px;
+	font-weight:bold;
+	text-align:center;
+	background:#28B1E8;
+	border-bottom:2px solid #fff;
+	color:#FFFFFF;
+}
+
+.leftSliderRow{
+	padding:16px 0px;
+	border-bottom:1px solid #fff;
+	text-align:center;
+	background:#012e4f;
+	color:#00CCFF;
+}
+
+.leftSliderRow_hover{
+	background:#00CCFF;
+	color:#FFFFFF;
+}
+
+.wholeDiv{
+	margin:30px;
+}
+
+.innerDiv{
+	display:table;
+	width:100%;
+	table-layout:fixed;
+}
+
+.leftColn{
+	display:table-cell;
+	width:100px;
+	vertical-align:middle;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.rightColn{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.imageColn{
+	display:table-cell;
+	vertical-align:middle;
+	width:40px;
+	text-align:center;
+}
+
+.btnRow{
+	margin-top:20px;
+	margin-bottom:80px;
+}
+
+.btnClass{
+	background-color:#28B1E8;
+	font-family: sans-serif;
+	color:#FFFFFF;
+	text-align:center;
+	padding:6px 0px;
+	border-radius:2px;
+	width:80px;
+	display:inline-block;
+}
+
+
+.bookinglist{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	font-size:14px;
+}
+.bookinglist .leftDiv{
+	display:table-cell;
+	width:auto;
+}
+.bookinglist .innerDiv{
+	margin-left:10px;
+	margin-top:5px;
+}
+.bookinglist .arrowDiv{
+	display:table-cell; 
+	width:30px;
+	vertical-align:middle;
+}
+
+.detail{
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	padding:10px;
+}
+
+.detail .firstColnm{
+	display:table-cell;
+	width:110px;
+}
+
+.detail .secondColnm{
+	display:table-cell;
+	width:10px;
+}
+
+.detail .lastColmn{
+	display:table-cell;
+	width:auto;
+}
+
+
+.ui-body-inherit.list_hover{
+	background: #f8a323;
+}
+
+.modalOverlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	z-index: 101;
+}
+
+.modalWindow {
+	position: fixed;
+	width:200px;
+	min-height:80px;
+	padding: 20px;
+	background:#FFFFFF;
+	border-radius: 5px;
+}
+
+.popup_content{
+	font-size:14px;
+	color:#000000;
+	margin:10px;
+}
+
+.popup_btn{
+	width:80px;
+	padding:3px;
+	border:2px solid #28B1E8;
+	font-size:14px;
+	text-align:center;
+	border-radius:5px;
+	color:#000000;
+	margin:0 auto;
+	margin-top:15px;
+	margin-bottom:5px;
+	display:inline-block;
+}
+
+.popup_ok_btn{
+	width:80px;
+	padding:3px;
+	border:2px solid #28B1E8;
+	font-size:14px;
+	text-align:center;
+	border-radius:5px;
+	color:#000000;
+	margin:0 auto;
+	margin-top:15px;
+	margin-bottom:5px;
+}
+
+
+.footerDiv{
+	position:absolute;
+	width:100%;
+	bottom:0;
+	background:#cccccc;
+	height:50px;
+	font-size:14px;
+}
+
+.footer_content{
+	margin-left:10px;
+	margin-top:18px;
+	font-weight:bold;
+	font-size:12px;
+	text-align:right;
+	margin-right:10px;
+}
+
+.textareaClass{
+	border:1px solid #ccc;
+	border-radius:5px;
+	width:100%;
+}
+
+/*********************************Calendar PopUp ************************/
+
+.calendarPopUp{
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:1000;
+	margin-top:-70px;
+	margin-left:-120px;
+}
+
+.calendarPopUPWholeDiv{
+	background-color:#666666;
+	border-radius:5px;
+	border:2px solid #FFFFFF;
+}
+	
+.increaseValue{
+	text-align:center;
+	width:62px;
+	padding: 5px 0px;
+	margin:0px 2px;
+	font-size:18px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.firstTextBox{
+	width:60px;
+	border-radius:0px;
+	padding:0px;
+	height:38px;
+	margin:0px 2px;
+	font-size:18px;
+	text-align:center
+}
+
+.decreaseValue{
+	text-align:center;
+	width: 62px;
+	padding: 5px 0px;
+	margin:0px 2px 2px 2px;
+	font-size:18px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.yearIncrease{
+	text-align:center;
+	width:78px;
+	padding: 5px 0px;
+	margin:0px 2px;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer
+}
+
+.yearTextbox{
+	width:76px;
+	border-radius:0px;
+	padding:0px;
+	height:38px;
+	margin:0px 2px;
+	font-size:18px;
+	text-align:center;
+	cursor:pointer
+}
+
+.yearDecrease{
+	text-align:center;
+	width:78px;
+	padding: 5px 0px;
+	margin:0px 2px;
+	font-size:18px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.calbuttonRow{
+	background-color:#a7a7a7;
+}
+
+.setButton{
+	font-size:20px;
+	text-align:center;
+	padding: 5px 0px;
+	margin:2px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.cancelButton{
+	font-size:20px;
+	text-align:center;
+	padding: 5px 0px;
+	margin:2px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.ui-panel-position-right.ui-panel-display-reveal {
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.15) inset;
+	background:#F9F9F9;
+}

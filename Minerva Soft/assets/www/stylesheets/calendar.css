@@ -1,0 +1,103 @@
+
+.calendarPopUp{
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:1000;
+	margin-top:-70px;
+	margin-left:-120px;
+}
+
+.calendarPopUPWholeDiv{
+	background-color:#666666;
+	border-radius:5px;
+	border:2px solid #FFFFFF;
+}
+	
+.increaseValue{
+	text-align:center;
+	width:62px;
+	padding: 5px 0px;
+	margin:0px 2px;
+	font-size:18px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.firstTextBox{
+	width:60px;
+	border-radius:0px;
+	padding:0px;
+	height:38px;
+	margin:0px 2px;
+	font-size:18px;
+	text-align:center
+}
+
+.decreaseValue{
+	text-align:center;
+	width: 62px;
+	padding: 5px 0px;
+	margin:0px 2px 2px 2px;
+	font-size:18px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.yearIncrease{
+	text-align:center;
+	width:78px;
+	padding: 5px 0px;
+	margin:0px 2px;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer
+}
+
+.yearTextbox{
+	width:76px;
+	border-radius:0px;
+	padding:0px;
+	height:38px;
+	margin:0px 2px;
+	font-size:18px;
+	text-align:center;
+	cursor:pointer
+}
+
+.yearDecrease{
+	text-align:center;
+	width:78px;
+	padding: 5px 0px;
+	margin:0px 2px;
+	font-size:18px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.calbuttonRow{
+	background-color:#a7a7a7;
+}
+
+.setButton{
+	font-size:20px;
+	text-align:center;
+	padding: 5px 0px;
+	margin:2px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.cancelButton{
+	font-size:20px;
+	text-align:center;
+	padding: 5px 0px;
+	margin:2px;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.ui-panel-position-right.ui-panel-display-reveal {
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.15) inset;
+	background:#F9F9F9;
+}

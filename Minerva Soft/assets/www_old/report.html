@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script  type="text/javascript" src="javascripts/jsloader.js"></script>
+    <script>
+		app.initialize();
+	</script>
+</head>
+<body>
+<div data-role="page" class="minerava" id="reportPage">     
+	<div role="main" class="ui-content">
+    	<div class="headerDiv">
+            <div class="leftColn" onClick="onAppBackPressed();">
+                <div class="back_icon"></div>
+            </div>
+             <div class="middleColn">
+                  Report
+            </div>
+             <div class="lastColn" onClick="openLeftPanel();">
+            	<div class="more_icon"></div>
+            </div>
+    	</div>
+
+        <div class="wholeDiv">
+        	<div class="innerDiv">
+            	<div class="leftColn">Customer</div>
+                <div class="rightColn">
+                	<select id="customer">
+                    	<option value="">Select</option>
+                    </select>
+                </div>
+            </div>
+            <div class="innerDiv">
+            	<div class="leftColn">Project</div>
+                <div class="rightColn">
+                	<select id="projects">
+                    	<option value="">Select</option>
+                    </select>
+                </div>            
+            </div>
+			<div class="innerDiv">
+            	<div class="leftColn">Ticket Type</div>
+                <div class="rightColn">
+                	<select id="ticket_type">
+                    	<option value="">All</option>
+                        <option value="1">Defect</option>
+                        <option value="2">Enhancement</option>
+                        <option value="3">Query</option>
+                    </select>
+                </div>
+            </div>
+            <div class="innerDiv">
+            	<div class="leftColn">Start Date</div>
+                <div class="rightColn">
+                	<input type="text" id="start_date" value="" disabled/>
+                </div>
+                <div class="imageColn" onClick="showCalendar('start_date')">
+                	<img src="images/calendar.gif" style="width:30px;"/>
+                </div>
+            </div>
+            <div class="innerDiv">
+            	<div class="leftColn">To Date</div>
+                <div class="rightColn">
+                	<input type="text" id="to_date" value="" disabled/>
+                </div>
+                <div class="imageColn" onClick="showCalendar('to_date')">
+                	<img src="images/calendar.gif" style="width:30px;"/>
+                </div>
+            </div>
+			<div class="innerDiv">
+            	<div class="leftColn">Status</div>
+                <div class="rightColn">
+                	<select id="status">
+                    	<option value="">All</option>
+                        <option value="not-taken">New</option>
+                        <option value="completed">Completed</option>
+                        <option value="processing">Processing</option>
+                    </select>
+                </div>
+            </div>
+			<div class="innerDiv">
+            	<div class="leftColn">+HR</div>
+                <div class="rightColn">
+                	<label for="hr"><input type="checkbox" name="select" id="checkbox"/></label>
+                </div>
+            </div>	
+            <div align="center" class="btnRow">
+				<div class="btnClass" onClick="getReport();">Submit</div>
+            </div>
+        </div>
+        <div class="footerDiv">
+    		<div class="footer_content">Developed By Minerva Soft 2015</div>
+    	</div>
+	</div>
+</div>
+</body>
+</html>

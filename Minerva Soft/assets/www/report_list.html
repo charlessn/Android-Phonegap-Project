@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script  type="text/javascript" src="javascripts/jsloader.js"></script>
+    <script>
+		app.initialize();
+	</script>
+</head>
+<body>
+
+<div data-role="page" class="minerava" id="getReportList">
+	<div role="main" class="ui-content">
+    	<div class="headerDiv">
+            <div class="leftColn" onClick="onAppBackPressed();">
+                <div class="back_icon"></div>
+            </div>
+             <div class="middleColn">
+                  Report List
+            </div>
+    	</div>
+    	<div id="wrapper" style="bottom:50px;">
+            <div id="scroller">
+              <div id="list" style="margin-top:16px;">
+              </div>
+           </div>
+       </div>
+       <div style="position:fixed;bottom:8px; width:100%;">
+       		<div align="right" style="margin-right:15px;">
+				<div class="btnClass" style="visibility:hidden" onClick="prev();" id="prev">Prev</div>
+                <div class="btnClass" style="visibility:hidden" onClick="next();" id="next">Next</div>
+            </div>
+       </div>
+	</div>
+</div>
+</body>
+</html>

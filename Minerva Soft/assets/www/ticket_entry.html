@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script  type="text/javascript" src="javascripts/jsloader.js"></script>
+    <script>
+		app.initialize();
+	</script>
+</head>
+<body>
+<div data-role="page" class="minerava" id="ticketEntryPage">     
+	<div role="main" class="ui-content">
+    	<div class="headerDiv">
+            <div class="leftColn" onClick="onAppBackPressed();">
+                <div class="back_icon"></div>
+            </div>
+             <div class="middleColn">
+                  Ticket Entry
+            </div>
+             <div class="lastColn" onClick="openLeftPanel();">
+            	<div class="more_icon"></div>
+            </div>
+    	</div>
+        <div class="wholeDiv">
+        	<div class="innerDiv">
+            	<div class="leftColn">Project Name</div>
+                <div class="rightColn">
+                	<select id="project_name">
+                    	<option value="">Select</option>
+                    </select>
+                </div>
+            </div>
+            <div class="innerDiv">
+            	<div class="leftColn">Email</div>
+                <div class="rightColn">
+                	<input type="text" id="email"/>
+                </div>
+            </div>
+			<div class="innerDiv">
+            	<div class="leftColn">Ticket Type</div>
+                <div class="rightColn">
+                	<select id="ticket_type">
+                    	<option value="3">Enhancement</option>
+                    	<option value="1">Defect</option>
+                        <option value="2">Query</option>
+                    </select>
+                </div>
+            </div>
+			<div class="innerDiv">
+            	<div class="leftColn">Mode</div>
+                <div class="rightColn">
+                	<select id="mode">
+                    	<option value="Port">Port</option>	
+                    	<option value="Phone">Phone</option>
+                        <option value="E-Mail">Email</option>
+                        <option value="Mail">Mail</option>
+                        <option value="Soft">Soft</option>
+                        <option value="Direct">Direct</option>
+                    </select>
+                </div>
+            </div>
+            <div class="innerDiv">
+            	<div class="leftColn">Date</div>
+                <div class="rightColn">
+                	<input type="text" id="entry_date" disabled/>
+                </div>
+                <div class="imageColn" onClick="showCalendar('entry_date')">
+                	<img src="images/calendar.gif" style="width:30px;"/>
+                </div>
+            </div>
+			<div class="innerDiv">
+            	<div class="leftColn">Subject</div>
+                <div class="rightColn">
+                	<input type="text" id="subject" maxlength=20/>
+                </div>
+            </div>
+			<div class="innerDiv">
+            	<div class="leftColn">Description</div>
+                <div class="rightColn">
+                	<textarea data-role="none" class="textareaClass" id="description"></textarea>
+                </div>
+            </div>
+			<div class="innerDiv" style="margin-top:5px;">
+            	<div class="leftColn">Attach file</div>
+                <div class="rightColn">
+                	<input type="file" id="attach_file" data-role="none"/>
+                </div>
+            </div>	
+            <div align="center" class="btnRow">
+				<div class="btnClass" onClick="ticketEntry();">Submit</div>
+            </div>
+        </div>
+        <div class="footerDiv">
+    		<div class="footer_content">Developed By Minerva Soft 2015</div>
+    	</div>
+	</div>
+</div>
+</body>
+</html>

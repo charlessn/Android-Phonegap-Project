@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Real Image</title>
+    <script src="js/jsloader.js" type="text/javascript"></script>
+    <script>
+		app.initialize();
+	</script>
+</head>
+<body class="bodyCls" onload="getDepartment()";>
+<div class="register_div">
+	<div class="col-md-20a register_menu">
+		<div id="apDiv1">
+        	<img src="images/logo4.png" width="129px" />
+        </div>
+		<div class="col-md-22a"></div>
+	</div>
+ 	<div class="col-md-23a register_title_bg">
+   	<div align="center" class="register_title">Registration</div>
+</div>
+<div class="col-md-26a pad-20px">
+	<div class="col-md-27a register_bg">
+	<div class="col-md-26a">
+		<div class="register_contentDiv">Employee ID</div>
+        <input type="text" class="register_textbox" id="emp_id" width="100%" maxlength="5"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Employee Name</div>
+        <input type="text" class="register_textbox" id="user_name" width="100%" maxlength="250"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Password</div>
+       	<input type="password" class="register_textbox" id="user_pass" width="100%" maxlength="7"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Mobile No</div>
+        <input type="number" class="register_textbox" id="mob_no" width="100%" maxlength="10"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Email Id</div>
+        <input type="text" class="register_textbox" id="email_id" width="100%" maxlength="100"/>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Department</div>
+        <select class="register_textbox" id="dep_id"></select>
+     </div>
+     <div class="col-md-26a margin-top-15px">
+		<div class="register_contentDiv">Category</div>
+        <select class="register_textbox" id="cat_id"></select>
+     </div>
+     <div class="col-md-26a margin-top-18px" align="center">
+        <input name="Submit2" type="submit" class="input-submit1" value="Register" onclick="register();"/>	
+    </div>
+</div>
+</div> 
+ <div class="col-md-26a copy_right_bg">
+ 	<div align="center" class="copy_right_text">Copyright © REAL IMAGE</div>
+ </div>
+</div>
+<div class="loading" id="loading"></div>
+</body>
+</html>
